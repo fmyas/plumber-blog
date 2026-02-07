@@ -1,0 +1,515 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Google Ads for Plumbers in Singapore | PlumberAI</title>
+<meta name="description" content="Specialized Google Ads management for Singapore plumbing businesses. Data-driven, AI-powered campaigns that get your phone ringing with qualified leads.">
+<style>
+:root {
+  --green-700: #047857;
+  --green-600: #059669;
+  --green-500: #10b981;
+  --green-100: #d1fae5;
+  --green-50: #ecfdf5;
+  --dark-900: #0f1419;
+  --dark-800: #1a2332;
+  --gray-900: #111827;
+  --gray-700: #374151;
+  --gray-500: #6b7280;
+  --gray-200: #e5e7eb;
+  --gray-100: #f3f4f6;
+  --gray-50: #f9fafb;
+  --white: #ffffff;
+}
+
+* { margin: 0; padding: 0; box-sizing: border-box; }
+
+body {
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif;
+  color: var(--gray-900);
+  line-height: 1.6;
+  background: var(--white);
+}
+
+/* ── Nav ── */
+.nav {
+  background: var(--white);
+  border-bottom: 1px solid var(--gray-200);
+  padding: 1rem 2rem;
+  position: sticky;
+  top: 0;
+  z-index: 100;
+}
+.nav-inner {
+  max-width: 1100px;
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.nav-logo {
+  font-weight: 800;
+  font-size: 1.3rem;
+  color: var(--green-700);
+  text-decoration: none;
+}
+.nav-logo span { color: var(--gray-900); }
+.nav-cta {
+  background: var(--green-700);
+  color: var(--white);
+  padding: 0.6rem 1.5rem;
+  border-radius: 6px;
+  text-decoration: none;
+  font-weight: 600;
+  font-size: 0.9rem;
+  transition: background 0.2s;
+}
+.nav-cta:hover { background: var(--green-600); }
+
+/* ── Hero ── */
+.hero {
+  background: var(--dark-900);
+  color: var(--white);
+  padding: 0;
+  position: relative;
+  overflow: hidden;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  min-height: 500px;
+}
+.hero::before {
+  content: '';
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  height: 4px;
+  background: linear-gradient(90deg, var(--green-700), var(--green-500), var(--green-700));
+  z-index: 2;
+}
+.hero-image {
+  background: url('hero.png') center center / cover no-repeat;
+  min-height: 500px;
+  position: relative;
+}
+.hero-image::after {
+  content: '';
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(90deg, var(--dark-900) 0%, transparent 25%);
+}
+.hero-inner {
+  max-width: 600px;
+  padding: 4rem 2rem 4rem 4rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  text-align: left;
+  position: relative;
+  z-index: 1;
+}
+.hero-badge {
+  display: inline-block;
+  border: 1px solid var(--green-500);
+  color: var(--green-500);
+  padding: 0.4rem 1rem;
+  border-radius: 100px;
+  font-size: 0.8rem;
+  font-weight: 600;
+  margin-bottom: 1.5rem;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+}
+.hero h1 {
+  font-size: 2.6rem;
+  line-height: 1.15;
+  font-weight: 800;
+  margin-bottom: 1.5rem;
+  letter-spacing: -0.02em;
+}
+.hero h1 .accent { color: var(--green-500); }
+.hero p {
+  font-size: 1.1rem;
+  color: rgba(255,255,255,0.7);
+  max-width: 600px;
+  margin: 0 auto 2rem;
+  line-height: 1.7;
+}
+.hero-cta {
+  display: inline-block;
+  background: var(--green-600);
+  color: var(--white);
+  padding: 1rem 2.5rem;
+  border-radius: 8px;
+  text-decoration: none;
+  font-weight: 700;
+  font-size: 1.05rem;
+  transition: background 0.2s, transform 0.2s;
+}
+.hero-cta:hover { background: var(--green-500); transform: translateY(-2px); }
+.hero-sub {
+  margin-top: 1rem;
+  font-size: 0.85rem;
+  color: rgba(255,255,255,0.4);
+}
+
+/* ── Stats ── */
+.stats {
+  background: var(--white);
+  border-bottom: 1px solid var(--gray-200);
+  padding: 3rem 2rem;
+}
+.stats-inner {
+  max-width: 900px;
+  margin: 0 auto;
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 1.5rem;
+  text-align: center;
+}
+.stat-number {
+  font-size: 2rem;
+  font-weight: 800;
+  color: var(--green-700);
+  line-height: 1;
+}
+.stat-label {
+  margin-top: 0.5rem;
+  font-size: 0.8rem;
+  color: var(--gray-500);
+}
+
+/* ── Section ── */
+.section {
+  padding: 4rem 2rem;
+}
+.section-alt { background: var(--gray-50); }
+.section-inner {
+  max-width: 900px;
+  margin: 0 auto;
+}
+.section h2 {
+  font-size: 1.8rem;
+  margin-bottom: 0.75rem;
+  letter-spacing: -0.01em;
+}
+.section h2 .accent { color: var(--green-700); }
+.section .subtitle {
+  font-size: 1rem;
+  color: var(--gray-500);
+  margin-bottom: 2rem;
+  max-width: 600px;
+}
+
+/* ── Data Cards ── */
+.data-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 1rem;
+  margin: 1.5rem 0;
+}
+.data-card {
+  background: var(--white);
+  border: 1px solid var(--gray-200);
+  border-radius: 10px;
+  padding: 1.25rem;
+}
+.data-card h3 {
+  font-size: 0.75rem;
+  text-transform: uppercase;
+  letter-spacing: 0.06em;
+  color: var(--green-700);
+  margin-bottom: 0.4rem;
+  font-weight: 700;
+}
+.data-card .value {
+  font-size: 1.6rem;
+  font-weight: 800;
+  color: var(--gray-900);
+}
+.data-card .note {
+  margin-top: 0.4rem;
+  font-size: 0.8rem;
+  color: var(--gray-500);
+  line-height: 1.5;
+}
+
+/* ── Features ── */
+.features {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 1.5rem;
+  margin-top: 1.5rem;
+}
+.feature {
+  padding: 1.25rem;
+  border-radius: 10px;
+  background: var(--white);
+  border: 1px solid var(--gray-200);
+}
+.feature-icon {
+  width: 40px;
+  height: 40px;
+  border-radius: 8px;
+  background: var(--green-50);
+  color: var(--green-700);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 1.1rem;
+  margin-bottom: 0.75rem;
+}
+.feature h3 {
+  font-size: 0.95rem;
+  margin-bottom: 0.4rem;
+}
+.feature p {
+  font-size: 0.85rem;
+  color: var(--gray-500);
+  line-height: 1.6;
+}
+
+/* ── SG Specifics ── */
+.sg-points {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 1rem;
+  margin: 1.5rem 0;
+}
+.sg-point {
+  display: flex;
+  gap: 0.75rem;
+  align-items: flex-start;
+  padding: 1rem;
+  background: var(--green-50);
+  border-radius: 10px;
+}
+.sg-point-icon {
+  width: 32px;
+  height: 32px;
+  border-radius: 6px;
+  background: var(--green-700);
+  color: var(--white);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 0.9rem;
+  flex-shrink: 0;
+}
+.sg-point-text h4 {
+  font-size: 0.9rem;
+  margin-bottom: 0.2rem;
+}
+.sg-point-text p {
+  font-size: 0.8rem;
+  color: var(--gray-500);
+  line-height: 1.5;
+}
+
+/* ── Testimonial ── */
+.testimonial {
+  background: var(--green-50);
+  border-left: 3px solid var(--green-700);
+  border-radius: 0 10px 10px 0;
+  padding: 1.5rem;
+  margin: 1.5rem 0;
+}
+.testimonial blockquote {
+  font-size: 1rem;
+  font-style: italic;
+  color: var(--gray-700);
+  line-height: 1.7;
+  margin-bottom: 0.75rem;
+}
+.testimonial .attribution {
+  font-size: 0.85rem;
+  color: var(--gray-500);
+  font-style: normal;
+}
+
+/* ── CTA Section ── */
+.cta-section {
+  background: var(--dark-900);
+  color: var(--white);
+  padding: 4rem 2rem;
+  text-align: center;
+  position: relative;
+}
+.cta-section::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  height: 3px;
+  background: linear-gradient(90deg, var(--green-700), var(--green-500), var(--green-700));
+}
+.cta-section h2 {
+  font-size: 1.8rem;
+  margin-bottom: 1rem;
+}
+.cta-section h2 .accent { color: var(--green-500); }
+.cta-section p {
+  color: rgba(255,255,255,0.6);
+  max-width: 500px;
+  margin: 0 auto 2rem;
+  font-size: 1rem;
+}
+.cta-detail {
+  margin-top: 1.5rem;
+  font-size: 0.85rem;
+  color: rgba(255,255,255,0.4);
+}
+
+/* ── Footer ── */
+.footer {
+  background: var(--dark-900);
+  border-top: 1px solid rgba(255,255,255,0.05);
+  color: var(--gray-500);
+  padding: 1.5rem 2rem;
+  text-align: center;
+  font-size: 0.8rem;
+}
+.footer a { color: var(--green-500); text-decoration: none; }
+
+@media (max-width: 768px) {
+  .hero { grid-template-columns: 1fr; }
+  .hero-inner { padding: 3rem 1.5rem; }
+  .hero-image { min-height: 300px; order: -1; }
+  .hero-image::after { background: linear-gradient(180deg, transparent 50%, var(--dark-900) 100%); }
+  .hero h1 { font-size: 2rem; }
+  .stats-inner { grid-template-columns: repeat(2, 1fr); gap: 1rem; }
+  .data-grid { grid-template-columns: 1fr; }
+  .features { grid-template-columns: 1fr; }
+  .sg-points { grid-template-columns: 1fr; }
+}
+</style>
+</head>
+<body>
+
+<nav class="nav">
+  <div class="nav-inner">
+    <a href="/" class="nav-logo">Plumber<span>AI</span></a>
+    <a href="#contact" class="nav-cta">Get Started</a>
+  </div>
+</nav>
+
+<section class="hero">
+  <div class="hero-inner">
+    <div class="hero-badge">Google Ads &bull; Singapore Plumbers</div>
+    <h1>Smart Google Ads for <span class="accent">Singapore Plumbers</span></h1>
+    <p>Singapore's plumbing market is small but high-value. We use AI to ensure every dollar of your ad spend reaches customers who need a plumber now &mdash; not tomorrow.</p>
+    <a href="#contact" class="hero-cta">Get Your Free Market Analysis</a>
+    <div class="hero-sub">Data-driven. AI-powered. Plumber-specific.</div>
+  </div>
+  <div class="hero-image"></div>
+</section>
+
+<section class="stats">
+  <div class="stats-inner">
+    <div>
+      <div class="stat-number">$566M+</div>
+      <div class="stat-label">SG plumbing market</div>
+    </div>
+    <div>
+      <div class="stat-number">42%</div>
+      <div class="stat-label">CPC vs US average</div>
+    </div>
+    <div>
+      <div class="stat-number">5.5M</div>
+      <div class="stat-label">Population, English-first</div>
+    </div>
+    <div>
+      <div class="stat-number">HDB</div>
+      <div class="stat-label">80% live in public housing</div>
+    </div>
+  </div>
+</section>
+
+<section class="section section-alt">
+  <div class="section-inner">
+    <h2>Singapore's <span class="accent">Plumbing Ad Landscape</span></h2>
+    <p class="subtitle">Compact market, high income, English-speaking. Here's what makes SG unique for plumber advertising.</p>
+    <div class="sg-points">
+      <div class="sg-point">
+        <div class="sg-point-icon">&#127463;</div>
+        <div class="sg-point-text">
+          <h4>English Is the Business Language</h4>
+          <p>Unlike other Asian markets, Singapore searches are primarily in English. Your Google Ads reach the right audience without translation.</p>
+        </div>
+      </div>
+      <div class="sg-point">
+        <div class="sg-point-icon">&#127968;</div>
+        <div class="sg-point-text">
+          <h4>HDB-Centric Plumbing</h4>
+          <p>80% of Singaporeans live in HDB flats. Plumbing issues are specific: shared risers, PUB regulations, and standardized fittings.</p>
+        </div>
+      </div>
+      <div class="sg-point">
+        <div class="sg-point-icon">&#128176;</div>
+        <div class="sg-point-text">
+          <h4>Lower CPC, Higher Value</h4>
+          <p>CPC at 42% of US rates, but Singapore's high income means customers pay well for quality plumbing work. Strong ROI potential.</p>
+        </div>
+      </div>
+      <div class="sg-point">
+        <div class="sg-point-icon">&#127759;</div>
+        <div class="sg-point-text">
+          <h4>Compact Service Area</h4>
+          <p>The entire country is your service area. No wasted clicks from customers too far away &mdash; a unique advantage over larger markets.</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="section">
+  <div class="section-inner">
+    <h2>Why <span class="accent">PlumberAI</span></h2>
+    <p class="subtitle">We manage Google Ads exclusively for plumbers. No dentists. No lawyers. Just plumbers.</p>
+    <div class="features">
+      <div class="feature">
+        <div class="feature-icon">&#128202;</div>
+        <h3>Data-Driven Decisions</h3>
+        <p>We analyze plumber ad data across 10 countries. What works in similar markets informs your Singapore campaign from day one.</p>
+      </div>
+      <div class="feature">
+        <div class="feature-icon">&#9889;</div>
+        <h3>AI Optimization</h3>
+        <p>Our AI adjusts your bids in real-time. When a pipe bursts in Tampines and searches spike, your ad is already there.</p>
+      </div>
+      <div class="feature">
+        <div class="feature-icon">&#128200;</div>
+        <h3>Full Transparency</h3>
+        <p>Clear reporting in plain English. See exactly where every dollar goes and which keywords bring actual paying customers.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="section section-alt">
+  <div class="section-inner">
+    <h2>Results That Speak</h2>
+    <div class="testimonial">
+      <blockquote>"The AI caught a pattern we missed &mdash; emergency searches peak between 10pm and 2am. By shifting budget to those hours, our cost per lead dropped 30% while call volume went up."</blockquote>
+      <div class="attribution">&mdash; Plumbing business owner, 4+ years with PlumberAI</div>
+    </div>
+    <p style="color: var(--gray-500); font-size: 0.85rem;">Based on anonymized data from our existing plumbing client portfolio. We bring the same methodology to the Singapore market.</p>
+  </div>
+</section>
+
+<section class="cta-section" id="contact">
+  <h2>Grow Your Singapore <span class="accent">Plumbing Business</span></h2>
+  <p>Get a free analysis of the Google Ads opportunity for plumbers in Singapore. Real data, no sales pitch.</p>
+  <a href="mailto:ads@rasterize.co.jp?subject=Free%20Market%20Analysis%20Request%20(Singapore)&body=Hi%2C%20I%20run%20a%20plumbing%20business%20in%20Singapore%20and%20I'd%20like%20a%20free%20Google%20Ads%20market%20analysis.%0A%0AMy%20business%20name%3A%0AServices%20offered%3A%0ACurrent%20monthly%20ad%20budget%20(if%20any)%3A" class="hero-cta" style="background: var(--green-600); color: var(--white);">Get Your Free Analysis</a>
+  <div class="cta-detail">Response within 24 hours. Available via email or WhatsApp.</div>
+</section>
+
+<footer class="footer">
+  &copy; 2026 PlumberAI. Google Ads management exclusively for plumbing businesses.<br>
+  <a href="/">Blog</a> &middot; <a href="/us/">US</a> &middot; <a href="/ae/">UAE</a> &middot; <a href="/sg/">Singapore</a>
+</footer>
+
+</body>
+</html>

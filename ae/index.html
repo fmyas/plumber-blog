@@ -1,0 +1,440 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Google Ads for Plumbers in the UAE | PlumberAI</title>
+<meta name="description" content="Specialized Google Ads management for plumbing businesses in the UAE. We understand Dubai's construction boom, the expat-driven market, and how to get your phone ringing.">
+<style>
+:root {
+  --gold-500: #d4a853;
+  --gold-400: #e5c06e;
+  --gold-100: #fdf6e3;
+  --dark-900: #0a0f1a;
+  --dark-800: #111827;
+  --dark-700: #1a2332;
+  --dark-600: #243042;
+  --gray-400: #9ca3af;
+  --gray-300: #d1d5db;
+  --white: #ffffff;
+}
+
+* { margin: 0; padding: 0; box-sizing: border-box; }
+
+body {
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif;
+  color: var(--white);
+  background: var(--dark-900);
+  line-height: 1.6;
+}
+
+/* ── Nav ── */
+.nav {
+  background: rgba(10, 15, 26, 0.95);
+  backdrop-filter: blur(10px);
+  border-bottom: 1px solid rgba(212, 168, 83, 0.2);
+  padding: 1rem 2rem;
+  position: sticky;
+  top: 0;
+  z-index: 100;
+}
+.nav-inner {
+  max-width: 1100px;
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.nav-logo {
+  font-weight: 800;
+  font-size: 1.3rem;
+  color: var(--gold-500);
+  text-decoration: none;
+}
+.nav-logo span { color: var(--white); }
+.nav-cta {
+  background: var(--gold-500);
+  color: var(--dark-900);
+  padding: 0.6rem 1.5rem;
+  border-radius: 6px;
+  text-decoration: none;
+  font-weight: 700;
+  font-size: 0.9rem;
+  transition: background 0.2s;
+}
+.nav-cta:hover { background: var(--gold-400); }
+
+/* ── Hero ── */
+.hero {
+  background: linear-gradient(160deg, var(--dark-900) 0%, var(--dark-700) 50%, var(--dark-800) 100%);
+  padding: 0;
+  text-align: left;
+  border-bottom: 1px solid rgba(212, 168, 83, 0.15);
+  position: relative;
+  overflow: hidden;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  min-height: 500px;
+}
+.hero-image {
+  background: url('hero.png') center center / cover no-repeat;
+  min-height: 500px;
+  position: relative;
+}
+.hero-image::after {
+  content: '';
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(90deg, var(--dark-900) 0%, transparent 30%);
+}
+.hero-inner {
+  max-width: 600px;
+  padding: 4rem 2rem 4rem 4rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  position: relative;
+  z-index: 1;
+}
+.hero-badge {
+  display: inline-block;
+  border: 1px solid var(--gold-500);
+  color: var(--gold-500);
+  padding: 0.4rem 1.2rem;
+  border-radius: 100px;
+  font-size: 0.85rem;
+  font-weight: 600;
+  margin-bottom: 1.5rem;
+  letter-spacing: 0.05em;
+  text-transform: uppercase;
+}
+.hero h1 {
+  font-size: 2.8rem;
+  line-height: 1.15;
+  font-weight: 800;
+  margin-bottom: 1.5rem;
+  letter-spacing: -0.02em;
+}
+.hero h1 .accent { color: var(--gold-500); }
+.hero p {
+  font-size: 1.15rem;
+  color: var(--gray-300);
+  max-width: 620px;
+  margin: 0 auto 2rem;
+  line-height: 1.7;
+}
+.hero-cta {
+  display: inline-block;
+  background: var(--gold-500);
+  color: var(--dark-900);
+  padding: 1rem 2.5rem;
+  border-radius: 8px;
+  text-decoration: none;
+  font-weight: 700;
+  font-size: 1.1rem;
+  transition: background 0.2s, transform 0.2s;
+}
+.hero-cta:hover { background: var(--gold-400); transform: translateY(-2px); }
+.hero-sub {
+  margin-top: 1rem;
+  font-size: 0.85rem;
+  color: var(--gray-400);
+}
+
+/* ── Stats ── */
+.stats {
+  background: var(--dark-800);
+  border-bottom: 1px solid rgba(212, 168, 83, 0.1);
+  padding: 3rem 2rem;
+}
+.stats-inner {
+  max-width: 900px;
+  margin: 0 auto;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 2rem;
+  text-align: center;
+}
+.stat-number {
+  font-size: 2.5rem;
+  font-weight: 800;
+  color: var(--gold-500);
+  line-height: 1;
+}
+.stat-label {
+  margin-top: 0.5rem;
+  font-size: 0.9rem;
+  color: var(--gray-400);
+}
+
+/* ── Section ── */
+.section {
+  padding: 4rem 2rem;
+}
+.section-alt { background: var(--dark-800); }
+.section-inner {
+  max-width: 900px;
+  margin: 0 auto;
+}
+.section h2 {
+  font-size: 2rem;
+  margin-bottom: 1rem;
+  letter-spacing: -0.01em;
+}
+.section h2 .accent { color: var(--gold-500); }
+.section .subtitle {
+  font-size: 1.05rem;
+  color: var(--gray-400);
+  margin-bottom: 2.5rem;
+  max-width: 650px;
+}
+
+/* ── Data Cards ── */
+.data-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 1.5rem;
+  margin: 2rem 0;
+}
+.data-card {
+  background: var(--dark-700);
+  border: 1px solid rgba(212, 168, 83, 0.15);
+  border-radius: 12px;
+  padding: 1.5rem;
+}
+.data-card h3 {
+  font-size: 0.85rem;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+  color: var(--gold-500);
+  margin-bottom: 0.5rem;
+}
+.data-card .value {
+  font-size: 2rem;
+  font-weight: 800;
+  color: var(--white);
+}
+.data-card .note {
+  margin-top: 0.5rem;
+  font-size: 0.85rem;
+  color: var(--gray-400);
+}
+
+/* ── Features ── */
+.features {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 2rem;
+  margin-top: 2rem;
+}
+.feature {
+  padding: 1.5rem;
+  border-radius: 12px;
+  background: var(--dark-700);
+  border: 1px solid rgba(212, 168, 83, 0.1);
+}
+.feature-icon {
+  width: 48px;
+  height: 48px;
+  border-radius: 10px;
+  background: rgba(212, 168, 83, 0.15);
+  color: var(--gold-500);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 1.3rem;
+  margin-bottom: 1rem;
+}
+.feature h3 {
+  font-size: 1.05rem;
+  margin-bottom: 0.5rem;
+  color: var(--white);
+}
+.feature p {
+  font-size: 0.9rem;
+  color: var(--gray-400);
+  line-height: 1.6;
+}
+
+/* ── Testimonial ── */
+.testimonial {
+  background: rgba(212, 168, 83, 0.08);
+  border-left: 4px solid var(--gold-500);
+  border-radius: 0 12px 12px 0;
+  padding: 2rem;
+  margin: 2rem 0;
+}
+.testimonial blockquote {
+  font-size: 1.1rem;
+  font-style: italic;
+  color: var(--gray-300);
+  line-height: 1.7;
+  margin-bottom: 1rem;
+}
+.testimonial .attribution {
+  font-size: 0.9rem;
+  color: var(--gray-400);
+  font-style: normal;
+}
+
+/* ── CTA Section ── */
+.cta-section {
+  background: linear-gradient(160deg, var(--dark-700) 0%, var(--dark-900) 100%);
+  border-top: 1px solid rgba(212, 168, 83, 0.2);
+  padding: 4rem 2rem;
+  text-align: center;
+}
+.cta-section h2 {
+  font-size: 2rem;
+  margin-bottom: 1rem;
+}
+.cta-section p {
+  color: var(--gray-400);
+  max-width: 550px;
+  margin: 0 auto 2rem;
+  font-size: 1.05rem;
+}
+.cta-detail {
+  margin-top: 1.5rem;
+  font-size: 0.9rem;
+  color: var(--gray-400);
+}
+
+/* ── Footer ── */
+.footer {
+  background: var(--dark-900);
+  border-top: 1px solid rgba(255,255,255,0.05);
+  color: var(--gray-400);
+  padding: 2rem;
+  text-align: center;
+  font-size: 0.85rem;
+}
+.footer a { color: var(--gold-500); text-decoration: none; }
+
+@media (max-width: 768px) {
+  .hero { grid-template-columns: 1fr; }
+  .hero-inner { padding: 3rem 1.5rem; }
+  .hero-image { min-height: 300px; order: -1; }
+  .hero-image::after { background: linear-gradient(180deg, transparent 50%, var(--dark-900) 100%); }
+  .hero h1 { font-size: 2rem; }
+  .stats-inner { grid-template-columns: 1fr; gap: 1.5rem; }
+  .data-grid { grid-template-columns: 1fr; }
+  .features { grid-template-columns: 1fr; }
+}
+</style>
+</head>
+<body>
+
+<nav class="nav">
+  <div class="nav-inner">
+    <a href="/" class="nav-logo">Plumber<span>AI</span></a>
+    <a href="#contact" class="nav-cta">Request a Consultation</a>
+  </div>
+</nav>
+
+<section class="hero">
+  <div class="hero-inner">
+    <div class="hero-badge">Google Ads for UAE Plumbers</div>
+    <h1>Dominate the <span class="accent">UAE Plumbing Market</span> on Google</h1>
+    <p>Dubai's construction boom means more buildings, more plumbing, and more customers searching online. We help UAE plumbing companies capture that demand with precision-targeted Google Ads.</p>
+    <a href="#contact" class="hero-cta">Request a Free Consultation</a>
+    <div class="hero-sub">Specialized in the UAE market. We understand the expat economy.</div>
+  </div>
+  <div class="hero-image"></div>
+</section>
+
+<section class="stats">
+  <div class="stats-inner">
+    <div>
+      <div class="stat-number">$3.5B+</div>
+      <div class="stat-label">UAE plumbing and MEP market size</div>
+    </div>
+    <div>
+      <div class="stat-number">108%</div>
+      <div class="stat-label">CPC premium vs global average</div>
+    </div>
+    <div>
+      <div class="stat-number">88%</div>
+      <div class="stat-label">Expat population &mdash; English-first search behavior</div>
+    </div>
+  </div>
+</section>
+
+<section class="section section-alt">
+  <div class="section-inner">
+    <h2>The UAE Market: <span class="accent">Unique Challenges</span></h2>
+    <p class="subtitle">The UAE plumbing ad market is unlike any other. Here's what you need to know.</p>
+    <div class="data-grid">
+      <div class="data-card">
+        <h3>Premium CPC</h3>
+        <div class="value">108% Above Average</div>
+        <div class="note">UAE CPCs are among the highest globally. Every wasted click is expensive.</div>
+      </div>
+      <div class="data-card">
+        <h3>Expat-Driven Demand</h3>
+        <div class="value">88% Non-National</div>
+        <div class="note">Your customers search in English. Multilingual ad copy is unnecessary.</div>
+      </div>
+      <div class="data-card">
+        <h3>Construction Boom</h3>
+        <div class="value">Growing Market</div>
+        <div class="note">New residential and commercial developments constantly add demand.</div>
+      </div>
+      <div class="data-card">
+        <h3>Year-Round Demand</h3>
+        <div class="value">No Seasonal Dip</div>
+        <div class="note">Unlike northern markets, no frozen-pipe winter surge. Consistent demand.</div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="section">
+  <div class="section-inner">
+    <h2>Why <span class="accent">PlumberAI</span> for UAE</h2>
+    <p class="subtitle">We don't just run Google Ads. We run Google Ads for plumbers, with data from markets around the world.</p>
+    <div class="features">
+      <div class="feature">
+        <div class="feature-icon">&#127963;</div>
+        <h3>UAE Market Expertise</h3>
+        <p>We understand Dubai's high-rise plumbing needs, Abu Dhabi's commercial sector, and how Sharjah's market differs. Your ads target the right audience in the right emirate.</p>
+      </div>
+      <div class="feature">
+        <div class="feature-icon">&#9889;</div>
+        <h3>AI-Powered Bidding</h3>
+        <p>Our AI adjusts your bids 24/7 based on real-time demand. When a building's water system fails, your ad is already at the top before competitors react.</p>
+      </div>
+      <div class="feature">
+        <div class="feature-icon">&#128176;</div>
+        <h3>Maximum ROI</h3>
+        <p>With CPCs at 108% premium, every dirham counts. We eliminate wasted spend on irrelevant clicks and focus your budget on searches that turn into jobs.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="section section-alt">
+  <div class="section-inner">
+    <h2>Proven Track Record</h2>
+    <div class="testimonial">
+      <blockquote>"Our cost per lead dropped by 30% in the first month. The AI optimization adjusted our bids during peak hours when emergency calls spike &mdash; something we never had time to do manually."</blockquote>
+      <div class="attribution">&mdash; Plumbing company owner, 4+ years working with PlumberAI</div>
+    </div>
+    <p style="color: var(--gray-400); font-size: 0.9rem;">Based on anonymized results from our existing portfolio of plumbing clients. We're expanding to the UAE with the same proven methodology.</p>
+  </div>
+</section>
+
+<section class="cta-section" id="contact">
+  <h2>Ready to <span class="accent">Grow Your UAE Plumbing Business</span>?</h2>
+  <p>Get a free analysis of the Google Ads landscape for plumbing in your emirate. No obligation, just data.</p>
+  <a href="mailto:ads@rasterize.co.jp?subject=Free%20Consultation%20Request%20(UAE)&body=Hi%2C%20I%20run%20a%20plumbing%20business%20in%20the%20UAE%20and%20I'm%20interested%20in%20Google%20Ads%20management.%0A%0AMy%20business%20name%3A%0ALocation%20(Emirate)%3A%0ACurrent%20monthly%20ad%20budget%20(if%20any)%3A" class="hero-cta">Request Your Free Consultation</a>
+  <div class="cta-detail">We respond within 24 hours. Available via email or WhatsApp.</div>
+</section>
+
+<footer class="footer">
+  &copy; 2026 PlumberAI. Google Ads management exclusively for plumbing businesses.<br>
+  <a href="/">Blog</a> &middot; <a href="/us/">US</a> &middot; <a href="/ae/">UAE</a> &middot; <a href="/sg/">Singapore</a>
+</footer>
+
+</body>
+</html>
