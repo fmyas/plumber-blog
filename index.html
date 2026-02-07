@@ -70,6 +70,55 @@ h1 {
   margin-bottom: 2.5rem;
   padding-bottom: 1.5rem;
   border-bottom: 1px solid var(--color-border);
+  display: flex;
+  flex-direction: column;
+  gap: 0.75rem;
+}
+
+.author {
+  display: flex;
+  align-items: center;
+  gap: 0.75rem;
+}
+
+.author-avatar {
+  width: 48px;
+  height: 48px;
+  border-radius: 50%;
+  background: var(--color-accent);
+  color: #fff;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-weight: 700;
+  font-size: 1.1rem;
+  flex-shrink: 0;
+  background-image: var(--author-photo);
+  background-size: cover;
+  background-position: center;
+}
+
+.author-avatar::after {
+  content: "FM";
+}
+
+.author-avatar[style*="background-image"]::after {
+  content: "";
+}
+
+.author-info {
+  display: flex;
+  flex-direction: column;
+  gap: 0.1rem;
+}
+
+.author-info strong {
+  color: var(--color-text);
+  font-size: 0.95rem;
+}
+
+.author-info span {
+  font-size: 0.8rem;
 }
 
 h2 {
@@ -236,7 +285,16 @@ ol.action-list li::before {
 
 <h1>What Does a Google Ads Click Actually Cost a Plumber? Real CPC Data From 4 Countries</h1>
 
-<div class="article-meta">February 7, 2026</div>
+<div class="article-meta">
+  <div class="author">
+    <div class="author-avatar" id="author-photo"></div>
+    <div class="author-info">
+      <strong>Fumiyasu Miyashita</strong>
+      <span>Managing over $600K/year in Google Ads for plumbing businesses</span>
+    </div>
+  </div>
+  <div>February 7, 2026</div>
+</div>
 
 <p class="lead">You're great at fixing pipes. You can handle a burst water main at 3 AM, clear a blocked drain in under an hour, and install a water heater before lunch. But getting the phone to ring? That's a different kind of problem.</p>
 
